@@ -324,7 +324,24 @@ async function populateLandingCarousel() {
         });
         card.appendChild(cardBody);
         landingCategoryCarousel.appendChild(link);
+     
+    });
 
+    const top_category1 = document.getElementById("top_category1");
+    top_category1.addEventListener("click",() => {
+      window.localStorage.setItem("current_cat","women's clothing");
+    });
+    const top_category2 = document.getElementById("top_category2");
+    top_category2.addEventListener("click",() => {
+      window.localStorage.setItem("current_cat","men's clothing");
+    });
+    const top_category3 = document.getElementById("top_category3");
+    top_category3.addEventListener("click",() => {
+      window.localStorage.setItem("current_cat","jewelery");
+    });
+    const top_category4 = document.getElementById("top_category4");
+    top_category4.addEventListener("click",() => {
+      window.localStorage.setItem("current_cat","electronics");
     });
   }
   
@@ -340,22 +357,7 @@ async function populateLandingCarousel() {
     
   }
 
-  const top_category1 = document.getElementById("top_category1");
-  top_category1.addEventListener("click",() => {
-    window.localStorage.setItem("current_cat","women's clothing");
-  });
-  const top_category2 = document.getElementById("top_category2");
-  top_category2.addEventListener("click",() => {
-    window.localStorage.setItem("current_cat","men's clothing");
-  });
-  const top_category3 = document.getElementById("top_category3");
-  top_category2.addEventListener("click",() => {
-    window.localStorage.setItem("current_cat","jewelery");
-  });
-  const top_category4 = document.getElementById("top_category4");
-  top_category4.addEventListener("click",() => {
-    window.localStorage.setItem("current_cat","electronics");
-  });
+
 
   populateLandingCarousel();
   populateLandingCategories();
