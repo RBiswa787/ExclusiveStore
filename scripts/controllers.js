@@ -342,7 +342,7 @@ function populateLandingCarousel() {
 }
 function populateLandingCategories() {
     return __awaiter(this, void 0, void 0, function () {
-        var categories, landingCategoryCarousel;
+        var categories, landingCategoryCarousel, top_category1, top_category2, top_category3, top_category4;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, getAllCategories()];
@@ -398,6 +398,23 @@ function populateLandingCategories() {
                         card.appendChild(cardBody);
                         landingCategoryCarousel.appendChild(link);
                     });
+                    top_category1 = document.getElementById("top_category1");
+                    top_category1.addEventListener("click", function () {
+                        console.log("topcat_click");
+                        window.localStorage.setItem("current_cat", "women's clothing");
+                    });
+                    top_category2 = document.getElementById("top_category2");
+                    top_category2.addEventListener("click", function () {
+                        window.localStorage.setItem("current_cat", "men's clothing");
+                    });
+                    top_category3 = document.getElementById("top_category3");
+                    top_category3.addEventListener("click", function () {
+                        window.localStorage.setItem("current_cat", "jewelery");
+                    });
+                    top_category4 = document.getElementById("top_category4");
+                    top_category4.addEventListener("click", function () {
+                        window.localStorage.setItem("current_cat", "electronics");
+                    });
                     return [2 /*return*/];
             }
         });
@@ -411,6 +428,9 @@ window.onload = function init() {
     }
     if (window.localStorage.getItem("order") === null) {
         window.localStorage.setItem("order", JSON.stringify({}));
+    }
+    if (window.localStorage.getItem("current_cat") === null) {
+        window.localStorage.setItem("current_cat", JSON.stringify("women's clothing"));
     }
 };
 populateLandingCarousel();

@@ -329,6 +329,7 @@ async function populateLandingCarousel() {
 
     const top_category1 = document.getElementById("top_category1");
     top_category1.addEventListener("click",() => {
+     console.log("topcat_click");
       window.localStorage.setItem("current_cat","women's clothing");
     });
     const top_category2 = document.getElementById("top_category2");
