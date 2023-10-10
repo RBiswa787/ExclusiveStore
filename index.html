@@ -55,16 +55,11 @@
     </header>
     <section class="sale">
         <div class="category-side">
-            <a onclick="setCategory('women\'s clothing')" href="./views/category.html">Women's Clothing</a>
-            <a onclick="setCategory('men\'s clothing')" href="./views/category.html">Men's Clothing</a>
-            <a onclick="setCategory('jewelery')" href="./views/category.html">Jewelery</a>
-            <a onclick="setCategory('electronics')" href="./views/category.html">Electronics</a>
+            <a id="top_category1" href="./views/category.html">Women's Clothing</a>
+            <a id="top_category2" href="./views/category.html">Men's Clothing</a>
+            <a id="top_category3" href="./views/category.html">Jewelery</a>
+            <a id="top_category4" href="./views/category.html">Electronics</a>
         </div>
-        <script>
-            function setCategory(cat){
-                window.localStorage.setItem('current_cat',cat);
-            }
-        </script>
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
