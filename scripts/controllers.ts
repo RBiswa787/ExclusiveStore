@@ -246,13 +246,13 @@ async function populateLandingCarousel() {
         
         for(let i=1;i<=5;i++){
             if(i < product.rating.rate){
-                const rate = document.createElement("span");
+                const rate = document.createElement("i");
                 rate.style.color = "orange";
                 rate.className = "fa fa-star checked";
                 ratingDiv.appendChild(rate);
             }
             else{
-                const rate = document.createElement("span");
+                const rate = document.createElement("i");
                 rate.style.color = "grey";
                 rate.className = "fa fa-star";
                 ratingDiv.appendChild(rate);

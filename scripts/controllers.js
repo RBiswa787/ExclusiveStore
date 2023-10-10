@@ -311,13 +311,13 @@ function populateLandingCarousel() {
                         var ratingDiv = document.createElement("p");
                         for (var i = 1; i <= 5; i++) {
                             if (i < product.rating.rate) {
-                                var rate = document.createElement("span");
+                                var rate = document.createElement("i");
                                 rate.style.color = "orange";
                                 rate.className = "fa fa-star checked";
                                 ratingDiv.appendChild(rate);
                             }
                             else {
-                                var rate = document.createElement("span");
+                                var rate = document.createElement("i");
                                 rate.style.color = "grey";
                                 rate.className = "fa fa-star";
                                 ratingDiv.appendChild(rate);
