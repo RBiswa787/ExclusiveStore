@@ -354,6 +354,9 @@ async function populateLandingCarousel() {
     if(window.localStorage.getItem("order") === null){
         window.localStorage.setItem("order",JSON.stringify({}));
     }
+    if(window.localStorage.getItem("current_cat") === null){
+        window.localStorage.setItem("current_cat",JSON.stringify("women's clothing"));
+    }
     
   }
 
