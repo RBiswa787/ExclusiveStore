@@ -1,5 +1,6 @@
 # GUVI Angular Training Assignment 2
 ## ECommerce Web App
+Deployment: https://exclusive-mart-biswadeep.netlify.app/
 
 ### - Biswadeep Ray
 
